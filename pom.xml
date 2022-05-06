@@ -6,7 +6,20 @@
 
     <groupId>online.yuanle</groupId>
     <artifactId>mall-parent</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+    <description>mall商城父项目</description>
+
+    <modules>
+        <module>mall-common</module>
+        <module>mall-common-service</module>
+        <module>mall-common-web</module>
+        <module>mall-pojo</module>
+        <module>mall-interface</module>
+        <module>mall-service-goods</module>
+        <module>mall-web-manager</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -122,11 +135,11 @@
                 <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
-            <!-- fastjson -->
+            <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
             <dependency>
-                <groupId>com.alibaba.fastjson2</groupId>
-                <artifactId>fastjson2</artifactId>
-                <version>2.0.1</version>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>2.0.2</version>
             </dependency>
             <!-- javassist -->
             <dependency>
